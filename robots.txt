@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://saifwiyar.github.io/sitemap.xml
