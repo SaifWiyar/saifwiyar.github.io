@@ -1,0 +1,10 @@
+import { Award, BookOpenCheck, Boxes, Microscope } from 'lucide-react';
+import { useApp } from '../context/AppContext';
+import { t } from '../lib/i18n';
+import { SectionHeading } from './SectionHeading';
+export function Achievements(){const{copy,locale}=useApp();const items=[
+{icon:Microscope,title:t(locale,'Research leadership','څېړنیزه مشري','رهبری پژوهش'),text:t(locale,'Pashto and Dari datasets, benchmark pipelines, and low-resource NLP research.','د پښتو او دري ډیټاسېټونه، بنچمارک پایپ‌لاینونه او کم‌سرچینې NLP څېړنه.','دیتاست‌های پشتو و دری، پایپ‌لاین‌های بنچمارک و پژوهش NLP کم‌منبع.')},
+{icon:BookOpenCheck,title:t(locale,'Academic impact','اکاډمیک اغېز','اثرگذاری اکادمیک'),text:t(locale,'More than five years of university, academy, and online teaching and mentoring.','په پوهنتون، اکاډمۍ او آنلاین تدریس او لارښوونه کې تر پنځو کلونو ډېره تجربه.','بیش از پنج سال تدریس و راهنمایی دانشگاهی، اکادمی و آنلاین.')},
+{icon:Boxes,title:t(locale,'Product ecosystems','محصولي ایکوسیستمونه','اکوسیستم‌های محصول'),text:t(locale,'Multilingual platforms, business systems, educational tools, and cloud-ready applications.','څوژبني پلاتفورمونه، سوداګریز سیستمونه، زده‌کړیز وسایل او کلاوډ ته چمتو اپلېکېشنونه.','پلتفرم‌های چندزبانه، سیستم‌های تجاری، ابزارهای آموزشی و اپلیکیشن‌های آماده ابر.')},
+{icon:Award,title:t(locale,'Cross-disciplinary profile','څو اړخیز پروفایل','پروفایل چندرشته‌ای'),text:t(locale,'Combining Data Science, AI, NLP, full-stack development, product leadership, and teaching.','د ډېټا ساینس، AI، NLP، فول‌سټېک پراختیا، محصولي مشري او تدریس یوځای کول.','ترکیب علم داده، هوش مصنوعی، NLP، توسعه فول‌استک، رهبری محصول و تدریس.')},
+];return <section className="section-space"><div className="container-shell"><SectionHeading label={copy.achievements.label} title={copy.achievements.title}/><div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">{items.map(({icon:Icon,title,text})=><article key={title} className="glass-card p-6"><Icon className="text-blue-600 dark:text-blue-400"/><h3 className="mt-5 text-lg font-black">{title}</h3><p className="mt-2 text-sm leading-6 text-slate-500 dark:text-slate-400">{text}</p></article>)}</div></div></section>}

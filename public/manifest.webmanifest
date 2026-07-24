@@ -1,0 +1,22 @@
+{
+  "name": "Saif Wiyar - Data Scientist and AI Engineer",
+  "short_name": "Saif Wiyar",
+  "description": "Professional portfolio of Saif Wiyar, Data Scientist, AI Engineer, Full Stack Developer, Machine Learning Engineer, Deep Learning and NLP Researcher, University Lecturer, and Founder of Saif Tech Studio and Saif Online Academy.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#020617",
+  "theme_color": "#07111f",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
