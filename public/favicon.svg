@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><rect width="64" height="64" rx="18" fill="url(#g)"/><text x="32" y="39" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="800" fill="white">SW</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+<title id="title">Saif Wiyar academic technology icon</title>
+<rect x="1.5" y="1.5" width="61" height="61" rx="14" fill="#05193a"/>
+<rect x="7" y="7" width="50" height="50" rx="9" fill="#072753"/>
+<rect x="14" y="12" width="36" height="29" rx="4" fill="#0e57b3" stroke="#f1f8ff" stroke-width="3"/>
+<path d="M11 44h42a4 4 0 0 1-4 5H15a4 4 0 0 1-4-5Z" fill="#edf8ff"/>
+<path d="M32 42c-5-4-10-6-16-6V24c6 0 11 2 16 6v12Z" fill="#f8fcff"/>
+<path d="M32 42c5-4 10-6 16-6V24c-6 0-11 2-16 6v12Z" fill="#f8fcff"/>
+<path d="M32 42V29" stroke="#27d8e5" stroke-width="2"/>
+<path d="m32 15-3.5 7 3.5 4 3.5-4-3.5-7Z" fill="#f8fcff"/>
+<circle cx="32" cy="21.5" r="1.2" fill="#05193a"/>
+<path d="M31 25h2v8h-2z" fill="#27d8e5"/>
+</svg>

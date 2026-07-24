@@ -1,22 +1,19 @@
-const CACHE = 'saifwiyar-portfolio-v3-1-1';
+const CACHE = 'saifwiyar-portfolio-v3-1-2';
 const scope = self.registration.scope;
 const url = (path) => new URL(path.replace(/^\/+/, ''), scope).toString();
 const CORE = [
   '',
-  'manifest.webmanifest',
-  'favicon.svg',
-  'favicon.ico',
-  'apple-touch-icon.png',
-  'icons/icon-192.png',
+  'manifest.webmanifest?v=3.1.2',
+  'favicon.svg?v=3.1.2',
+  'favicon.ico?v=3.1.2',
+  'apple-touch-icon.png?v=3.1.2',
+  'icons/icon-192.png?v=3.1.2',
+  'icons/icon-512.png?v=3.1.2',
   'assets/profile.webp',
 ].map(url);
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(
-    caches.open(CACHE)
-      .then((cache) => cache.addAll(CORE))
-      .then(() => self.skipWaiting()),
-  );
+  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(CORE)).then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (event) => {
